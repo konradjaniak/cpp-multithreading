@@ -13,7 +13,9 @@ void do_work()
 
 int main()
 {
-	thread worker(do_work);
+	thread worker(do_work); // execute thread function
+
+	worker.join(); // wait for the thread to finish (close thread)
 
 
 
